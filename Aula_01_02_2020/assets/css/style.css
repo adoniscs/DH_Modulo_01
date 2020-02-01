@@ -1,0 +1,10 @@
+/*  seletor coringa - universal: '*' 
+        <--/ RESET \-->
+*/
+header,
+footer {
+    color: orange;
+}
+article:nth-child(1n) p:last-child {
+    border: 1px solid red;
+}
