@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.link{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    border: ;
+}
+.link:hover{
+    background-color: darkblue;
+    transition: 0.5s;
+}
