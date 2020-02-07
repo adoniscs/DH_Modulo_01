@@ -1,3 +1,38 @@
+/* RESET */
 * {
-    border: 1px dashed red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header ul {
+    /* float: right; */
+    display:block;
+}
+header img {
+border-radius: 50%;
+border: 1px solid red;
+transition: all 0.8s ease-in-out;
+}
+header img:hover {
+    border-radius: 0;
+}
+article.nivel-dois {
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    padding: 10px;
+}
+ul li ul {
+    list-style: none;
+}
+ol,
+ul[type="circle"] {
+    /* border:2px solid black; */
+    padding-left: 20px;
+}
+.case {
+    border: 1px solid lightblue;
+    width: 30%;
+    display: inline-block;
 }
