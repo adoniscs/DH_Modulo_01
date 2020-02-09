@@ -4,30 +4,68 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: inherit; /* herdar o valor da propriedade do elemento pai */
     font-weight: bold;
-}
-header ul {
-    display:block;
+    transition: all 0.5s ease-in-out;
 }
 
-header ul li {
+a:hover {
+    color: rgb(37, 12, 180);
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fas.fa-phone {
+    transform: rotate(90deg);
+}
+
+header,
+main {
+    padding: 30px;
+}
+
+header,
+footer {
+    background-color: lightblue;
+}
+
+header ul {
+    display:block;
+    margin-top: 20px;
+}
+
+header ul li,
+footer ul li {
     display: inline-block;
+    margin: 5px;
+}
+
+header ul li:first-child {
+    margin-left: 0;
+}
+
+header ul li:last-child {
+    margin-right: 0;
 }
 
 header img {
-border-radius: 50%;
-border: 1px solid red;
-transition: all 0.8s ease-in-out;
+    border-radius: 50%;
+    border: 4px solid #2220ac;
+    filter: drop-shadow(7px 7px 10px #363232ab);
+    margin-top: 20px;
+    /* transition: all 0.8s ease-in-out; */
 }
-
+/* 
 header img:hover {
     border-radius: 0;
-}
+} */
 
 article.nivel-dois {
     display: inline-block;
@@ -42,25 +80,59 @@ ul li ul {
 
 ol,
 ul[type="circle"] {
-    /* border:2px solid black; */
     padding-left: 20px;
+}
+
+h2 {
+    margin: 20px auto;
+    text-align: center;
+    color: #2220ac;
 }
 
 .case {
     border: 1px solid lightblue;
-    width: 50%;
+    border-radius: 5px;
     display: inline-block;
+    width: calc(33% - 20px);
 }
 .case > img {
     width: 100%;
 
 }
 
+.case p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
 .case button {
-    background-color: rgb(19, 17, 146);
+    background-color: #2220ac;
     color: #fff;
     font-weight: bold;
     padding: 10px 20px;
     margin: 10px auto;
     display: block;
+    border: none;
+    border-radius: 6px;
+    line-height: 48px;
+    font-size: 24px;
+}
+
+footer ul {
+    display: block;
+    margin-left: 0 auto;
+    padding: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(197, 10, 10, 0.863);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 219, 195);
+    outline: 1px solid rgb(15, 124, 233);
 }
